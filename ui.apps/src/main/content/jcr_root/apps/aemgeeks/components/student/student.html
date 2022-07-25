@@ -1,0 +1,6 @@
+<div style="padding-top:50px"><b>STUDENT DETAILS</b></div>
+<div data-sly-use.student="com.aem.geeks.core.models.Student">
+<div>FirstName : ${student.firstName}</div>
+<div>LastName : ${student.lastName}</div>
+<div>Date of Birth : ${'MMM dd,yyyy' @ format=student.doB}</div>
+</div>

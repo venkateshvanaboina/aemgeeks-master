@@ -1,0 +1,11 @@
+<div style="padding-top:50px"><b>First Component</b></div>
+<div data-sly-use.student="com.aem.geeks.core.models.First">
+	<div>FirstName : ${student.firstName}</div>
+	<div>LastName : ${student.lastName}</div>
+    <img src="${student.file}" alt="Image" width="200" height="200" >
+
+</div>
+<sly data-sly-test="${!contentPresent && (wcmmode.edit || wcmmode.design) }">
+	<div data-emptytext="first" class="cq-placeholder">
+	</div>
+</sly>
